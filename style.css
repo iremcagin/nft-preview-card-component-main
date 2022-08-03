@@ -1,0 +1,207 @@
+/* 
+   0.041 ETH
+  3 days left
+  
+  Creation of Jules Wyvern
+*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    background-color: hsl(217, 54%, 11%);
+    color:  rgb(156, 155, 155); 
+}
+
+.attribution a { 
+    color:  hsl(215, 51%, 70%);
+}
+
+/* -------------- START ------------------- */
+body{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    background-color: hsl(217, 54%, 11%);
+    height: 99vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin-top: 10px;
+    background-color: hsl(216, 50%, 16%);
+    width: 330px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow:  0px 25px 15px 20px hsla(216, 66%, 8%, 0.803);
+    
+}
+
+.cube-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cube-image img{
+    width: 290px;
+    height: 290px;
+    border-radius: 8px;
+}
+
+/* ----------------- TEXT ------------------- */
+
+.text{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.text h1{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.text h2{
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: hsl(215, 51%, 70%);
+}
+
+/* --------------- INFORMATION -------------------- */
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+}
+
+.left-text{
+    margin-left: 8px;
+    color: hsl(178, 100%, 50%);
+    font-size: 15px;
+}
+
+.right-text{
+    margin-left: 8px;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+
+#line{
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    margin: 0 20px;
+    border-radius: 50px;
+}
+
+/* ------------- CREATION ------------------ */
+
+.creation{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.avatar{
+    width: 34px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.avatar img{
+    width: 32px;
+    height: 32px;
+    margin-right:0.1px;
+    margin-top: 0.1px
+}
+
+.avatar-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar-text-left{
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+#avatar-text-right{
+    color: #fff;
+    font-size: 16px;
+}
+
+/* ---------- ACTIVE STATES ------------- */
+#avatar-text-right:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.text h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+.cube-image:hover{
+    cursor: pointer;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: absolute;
+    height: 290px;
+    width: 290px;
+    opacity: 0;
+    transition: 0.2s;
+    background-color: hsl(178, 100%, 50%);
+}
+.overlay img{
+    width: 50px;
+    height: 50px;
+}
+
+.cube-image:hover .overlay{
+    opacity: 0.4;
+}
+
+.cube-image:hover .overlay img{
+    opacity: 1;
+}
